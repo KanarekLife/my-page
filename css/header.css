@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+header > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+}
+header > nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+header > nav > ul {
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+header > nav > ul > li {
+    display: inline;
+    font-size: 3em;
+}
+.menu-entry {
+    display: inline;
+    text-decoration: none;
+    color: black;
+    font-family: 'Alata', sans-serif;
+}
+.menu-entry::after {
+    content: '';
+    width: 0;
+    margin-left: 50%;
+    height: 1px;
+    display: block;
+    background: black;
+    transition: 300ms;
+}
+.menu-entry:hover::after {
+    margin-left: 0;
+    width: 100%;
+}
+header > svg {
+    flex: 0 0 100%;
+}
+header > svg > path {
+    animation: chroma 30s infinite;
+}
+header > div > h1 {
+    text-align: center;
+    font-size: 6em;
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 5vh;
+}
+@media only screen and (max-width: 600px) {
+    header > div > h1 {
+        margin-bottom: 60vh;
+    }
+}
+@media only screen and (max-width: 780px) {
+    header > div > h1 {
+        font-size: 3em;
+    }
+    header > nav > ul > li {
+        display: inline;
+        font-size: 2em;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    header > nav > ul {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+header > div > div {
+    display: flex;
+    justify-content: center;
+}
+header > div > div > img {
+    height: 100px;
+    width: 100px;
+    transform: rotate(90deg);
+    animation: arrow-jump 10s infinite;
+}
+
+@keyframes chroma {
+    from, to { fill: hsl(324, 100%, 50%); }
+    10%      { fill: hsl(360, 100%, 50%); }
+    20%      { fill: hsl( 36, 100%, 50%); }
+    30%      { fill: hsl( 72, 100%, 50%); }
+    40%      { fill: hsl(108, 100%, 50%); }
+    50%      { fill: hsl(144, 100%, 50%); }
+    60%      { fill: hsl(180, 100%, 50%); }
+    70%      { fill: hsl(216, 100%, 50%); }
+    80%      { fill: hsl(252, 100%, 50%); }
+    90%      { fill: hsl(288, 100%, 50%); }
+}
+
+@keyframes arrow-jump {
+    0%,
+    6%,
+    100% {
+        transform: rotate(90deg) translateX(0%);
+        transform-origin: 50% 50%;
+    }
+    1% {
+        transform: translateX(-30px) rotate(84deg);
+    }
+    2% {
+        transform: translateX(15px) rotate(96deg);
+    }
+    3% {
+        transform: translateX(-15px) rotate(86.4deg);
+    }
+    4% {
+        transform: translateX(9px) rotate(92.4deg);
+    }
+    5% {
+        transform: translateX(-6px) rotate(88.8deg);
+    }
+}

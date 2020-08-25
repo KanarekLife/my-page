@@ -1,0 +1,156 @@
+<html lang="en">
+    <head>
+        <title>KanarekLife</title>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="css/index.css" />
+        <link type="text/css" rel="stylesheet" href="css/header.css"/>
+    </head>
+    <body>
+        <header>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffd700" fill-opacity="1" d="M0,224L360,320L720,192L1080,192L1440,64L1440,0L1080,0L720,0L360,0L0,0Z"></path>
+            </svg>
+            <nav>
+                <ul>
+                    <li><a class="menu-entry" href="#home">Home</a> </li>
+                    <li><a class="menu-entry" href="#about-me"> About Me</a> </li>
+                    <li><a class="menu-entry" href="#my-projects">My projects</a> </li>
+                    <li><a class="menu-entry" href="#snippets">Snippets</a> </li>
+                    <li><a class="menu-entry" href="#contact">Contact</a> </li>
+                </ul>
+            </nav>
+            <div>
+                <h1>KanarekLife's Website</h1>
+                <div>
+                    <img src="assets/arrow.svg" alt=""/>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="home">
+                <h3>Hello there!</h3>
+                <article>
+                    <p>Hello! I'm Stanisław Nieradko, also known by my nickname 'KanarekLife'.</p>
+                    <p>I'm a 17 years old High School student living in Gdańsk, Poland. </p>
+                    <p>My usual tech stack includes ASP.Net Core and is focused on building a clean architecture web solutions on C# language.</p>
+                    <p>Feel free to look around and check out the projects I've created or contributed into and contact me if you have any good idea how can I improve them 😉</p>
+                </article>
+            </section>
+            <section id="about-me">
+                <h3>About Me</h3>
+                <article>
+                    <p>Stanisław Nieradko, 29.06.2003 DOB</p>
+                    <p>
+                        My main tech stack:
+                        <ul>
+                            <li>C# (mostly ASP.Net Core)</li>
+                            <li>JavaScript</li>
+                            <li>CSS and HTML5</li>
+                            <li>Git</li>
+                        </ul>
+                    <p>
+                        Technologies I've used however I'm not completely fluent with:
+                        <ul>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>Rust</li>
+                            <li>Dart</li>
+                        </ul>
+                    <p>
+                        Current main goals:
+                        <ul>
+                            <li>Improve my clean architecture knowledge to use it (mostly) in my .NET projects.</li>
+                            <li>Learn node.js express framework.</li>
+                            <li>Learn VUE.js.</li>
+                            <li>Improve my sys-admin skills.</li>
+                            <li>Learn more advanced SQL.</li>
+                            <li>Practise TDD.</li>
+                        </ul>
+                    <p>
+                        Education:
+                        <ul>
+                            <li>XX Liceum Ogólnokształcące im. Zbigniewa Herberta - since 2019</li>
+                        </ul>
+                    <p>
+                        IT related achievements:
+                        <ul>
+                            <li>Twice laureate of regional IT competition for secondary school students (2018 and 2019)</li>
+                            <li>A third place in <a href="https://eti.pg.edu.pl/igrzyskaeti-2020?p_l_id=99937214&p_l_id=99937214&p_v_l_s_g_id=0&p_v_l_s_g_id=0&">Igrzyska ETI</a> organised by Faculty of Electronics, Telecommunications and Informatics of Gdańsk University of Technology in 2020</li>
+                        </ul>
+                    <p>
+                        Non IT-related hobbies:
+                        <ul>
+                            <li>Gaming</li>
+                        </ul>
+                </article>
+            </section>
+            <section id="my-projects">
+                <h3>My Projects</h3>
+                <article>
+                    <h4>eru</h4>
+                    <p>
+                        eru is a project created in cooperation with my friend from school <a href="https://github.com/bazik33">Bazik33</a> and its goal is to create a great platform through which our school would be able to send substitutions quickly.
+                        Currently the substitutions are simply uploaded to website and a lot of students misses them.
+                        This project includes upload page that dynamically parses file to xml and uploads it into server, from which it automatically sends a notification to registered people via discord and fb messenger.
+                        Our sub-goal for this project was to try and grasp as much of clean architecture rules as possible (I'm leading in this task).
+                        Project includes using many popular techniques like: Mediator Pattern (achieved via mediatR), CQRS Pattern, Unit testing, Integration testing.
+                    </p>
+                    <p>Link to project: <a href="https://github.com/xxlo-devs/eru">Github</a> </p>
+                </article>
+                <article>
+                    <h4>SuperGamblino</h4>
+                    <p>
+                        SuperGamblino is a discord bot which goal was to allow users to 'gamble' (on points of course 😉). The project is written with DSharpPlus. The project was written by me and (mostly) two other people that I've via github issues.
+                        Bot included coinflip, leaderboard, roulette and slots. Bot was used in some servers, however the project died due to lack of time of my others.
+                    </p>
+                    <p>Link to project: <a href="https://github.com/SuperGamblino/SuperGamblino">Github</a> </p>
+                </article>
+                <article>
+                    <h4>WokLearner</h4>
+                    <p>
+                        WokLearner was another project written for school. Project was written in Angular and .NET Core (as an API). Its goal was to help my fellow students study for end-of-year arts exam which consisted of several painting that you had to name the author and 'age' of creation.
+                        Several people registered and used it however due to exam cancellation (due to COVID-19) it did not reached the peak is should have. Application consists of an gallery of paitings and a small quiz that allowed to train for the exam.
+                    </p>
+                    <p>Link to project: <a href="https://github.com/KanarekLife/WokLearner-Backend">Backed Github</a> and <a href="https://github.com/KanarekLife/WokLearner-Frontend">Frontend Github</a> </p>
+                </article>
+                <article>
+                    <h4>rust_figlet</h4>
+                    <p>
+                        rust_figlet is my own figlet alternative. It is compatible with a lot of figlet fonts. It automatically downloads the fonts to users computer on the first run. There is an online version that you can try out! At the beginning the project was written in C# however due to quite a big size of the binary I've decided to rewrite it.
+                    </p>
+                    <p>Link to project: <a href="https://github.com/KanarekLife/rust_figlet">Github</a> and <a href="http://rustfiglet-demo.kanareklife.repl.run/">Live online version</a> </p>
+                </article>
+                <article>
+                    <h4>KanarDrive</h4>
+                    <p>
+                        Despite the project is not finished I think it is quite interesting. I've created a GoogleDrive rip off with my own custom file browser in ASP.Net Core that uses LiteDB as storage system. The functionalities include uploading files, moving files around in a directory like environment and sharing files via a link.
+                    </p>
+                    <p>Link to project: <a href="https://github.com/KanarekLife/KanarDrive">Github</a> </p>
+                </article>
+                <article>
+                    <h4>KanarBlog</h4>
+                    <p>
+                        Simple blog like web application written in ASP.Net Core.
+                    </p>
+                    <p>Link to project: <a href="https://github.com/KanarekLife/KanarBlog">Github</a> </p>
+                </article>
+            </section>
+            <section id="snippets">
+                <h3>Snippets</h3>
+            </section>
+            <section id="contact">
+                <h3>Contact</h3>
+                <p>Stanisław Nieradko - Contact Details:</p>
+                <ul>
+                    <li>Email: REDACTED</li>
+                    <li>Github: <a href="https://github.com/KanarekLife">https://github.com/KanarekLife</a> </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>Created by <a href="/">KanarekLife</a> in 2020.</p>
+            <p>&copy; 2020 Stanisław Nieradko &lt;KanarekLife&gt;</p>
+            <p>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+        </footer>
+    </body>
+</html>
