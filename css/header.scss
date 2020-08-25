@@ -1,60 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
-header > div {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10vh;
-}
-header > nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-header > nav > ul {
-    padding: 10px;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-}
-header > nav > ul > li {
-    display: inline;
-    font-size: 1.5em;
+header {
+    div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10vh;
+
+        h1 {
+            font-size: 4em;
+            text-align: center;
+            font-family: 'Space Mono', monospace;
+            margin-bottom: 5vh;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            img {
+                height: 100px;
+                width: 100px;
+                transform: rotate(90deg);
+                animation: arrow-jump 10s infinite;
+            }
+        }
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        ul {
+            padding: 10px;
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style: none;
+
+            li {
+                display: inline;
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    svg {
+        flex: 0 0 100%;
+
+        path {
+            animation: chroma 30s infinite, waves 60s infinite alternate-reverse;
+            transition: all 2s;
+        }
+    }
 }
 .menu-entry {
     display: inline;
     text-decoration: none;
     color: black;
     font-family: 'Alata', sans-serif;
+
+    ::after {
+        content: '';
+        width: 0;
+        margin-left: 50%;
+        height: 1px;
+        display: block;
+        background: black;
+        transition: 300ms;
+    }
+
+    :hover::after {
+        margin-left: 0;
+        width: 100%;
+    }
 }
-.menu-entry::after {
-    content: '';
-    width: 0;
-    margin-left: 50%;
-    height: 1px;
-    display: block;
-    background: black;
-    transition: 300ms;
-}
-.menu-entry:hover::after {
-    margin-left: 0;
-    width: 100%;
-}
-header > svg {
-    flex: 0 0 100%;
-}
-header > svg > path {
-    animation: chroma 30s infinite, waves 60s infinite alternate-reverse;
-    transition: all 2s;
-}
-header > div > h1 {
-    font-size: 4em;
-    text-align: center;
-    font-family: 'Space Mono', monospace;
-    margin-bottom: 5vh;
-}
+
 @media only screen and (max-width: 600px) {
     header > div > h1 {
         margin-bottom: 60vh;
@@ -67,16 +89,6 @@ header > div > h1 {
         text-align: center;
         flex-direction: column;
     }
-}
-header > div > div {
-    display: flex;
-    justify-content: center;
-}
-header > div > div > img {
-    height: 100px;
-    width: 100px;
-    transform: rotate(90deg);
-    animation: arrow-jump 10s infinite;
 }
 
 @keyframes chroma {
