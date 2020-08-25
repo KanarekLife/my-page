@@ -54,5 +54,9 @@ section > article > h4 {
     }
 }
 footer {
-    font-size: 0.7em;
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+}
+.year {
+    font-style: normal;
 }

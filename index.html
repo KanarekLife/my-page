@@ -4,10 +4,14 @@
         <meta charset="UTF-8">
         <link type="text/css" rel="stylesheet" href="css/index.css" />
         <link type="text/css" rel="stylesheet" href="css/header.css"/>
+        <link type="text/css" rel="stylesheet" href="css/about-me.css"/>
+        <link type="text/css" rel="stylesheet" href="css/contact.css"/>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
     </head>
     <body>
         <header>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <svg id="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#ffd700" fill-opacity="1" d="M0,224L360,320L720,192L1080,192L1440,64L1440,0L1080,0L720,0L360,0L0,0Z"></path>
             </svg>
             <nav>
@@ -70,6 +74,13 @@
                             <li>Improve my sys-admin skills.</li>
                             <li>Learn more advanced SQL.</li>
                             <li>Practise TDD.</li>
+                        </ul>
+                    <p>
+                        Languages:
+                        <ul>
+                            <li>Polish - Native</li>
+                            <li>English - Communicative (non-certified fluent in speech, reading and partially writing)</li>
+                            <li>German - Learning</li>
                         </ul>
                     <p>
                         Education:
@@ -142,17 +153,22 @@
             </section>
             <section id="contact">
                 <h3>Contact</h3>
-                <p>Stanisław Nieradko - Contact Details:</p>
                 <ul>
-                    <li>Email: REDACTED</li>
-                    <li>Github: <a href="https://github.com/KanarekLife">https://github.com/KanarekLife</a> </li>
+                    <li>
+                        <a href="mailto:"><img src="assets/email.svg" alt="Email"/></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/KanarekLife"><img src="assets/github.svg" alt="Github"/></a>
+                    </li>
                 </ul>
             </section>
         </main>
         <footer>
             <p>Created by <a href="/">KanarekLife</a> in 2020.</p>
-            <p>&copy; 2020 Stanisław Nieradko &lt;KanarekLife&gt;</p>
-            <p>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+            <p>&copy; <i class="year">2020</i> Stanisław Nieradko &lt;KanarekLife&gt;</p>
+            <p>Some Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
         </footer>
     </body>
+    <script src="js/anime.min.js"></script>
+    <script src="js/index.js"></script>
 </html>
