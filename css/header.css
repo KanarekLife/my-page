@@ -21,7 +21,7 @@ header > nav > ul {
 }
 header > nav > ul > li {
     display: inline;
-    font-size: 3em;
+    font-size: 1.5em;
 }
 .menu-entry {
     display: inline;
@@ -49,8 +49,8 @@ header > svg > path {
     animation: chroma 30s infinite;
 }
 header > div > h1 {
+    font-size: 4em;
     text-align: center;
-    font-size: 6em;
     font-family: 'Space Mono', monospace;
     margin-bottom: 5vh;
 }
@@ -59,20 +59,12 @@ header > div > h1 {
         margin-bottom: 60vh;
     }
 }
-@media only screen and (max-width: 780px) {
-    header > div > h1 {
-        font-size: 3em;
-    }
-    header > nav > ul > li {
-        display: inline;
-        font-size: 2em;
-    }
-}
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
     header > nav > ul {
         display: flex;
         text-align: center;
         flex-direction: column;
+        font-size: 1.5em;
     }
 }
 header > div > div {
