@@ -60,21 +60,21 @@ header {
     text-decoration: none;
     color: black;
     font-family: 'Alata', sans-serif;
+}
 
-    ::after {
-        content: '';
-        width: 0;
-        margin-left: 50%;
-        height: 1px;
-        display: block;
-        background: black;
-        transition: 300ms;
-    }
+.menu-entry::after {
+    content: '';
+    width: 0;
+    margin-left: 50%;
+    height: 1px;
+    display: block;
+    background: black;
+    transition: 300ms;
+}
 
-    :hover::after {
-        margin-left: 0;
-        width: 100%;
-    }
+.menu-entry:hover::after {
+    margin-left: 0;
+    width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
