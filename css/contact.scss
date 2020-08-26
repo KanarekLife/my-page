@@ -16,3 +16,10 @@
         }
     }
 }
+
+@media only screen and (max-width : 640px) {
+    #contact > ul{
+        flex-direction: column;
+        padding-inline-start: 0;
+    }
+}
